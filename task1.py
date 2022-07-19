@@ -14,4 +14,4 @@ phosphoproteomes_only = np.setdiff1d(phosphoproteomes, proteomes)
 intersection = np.intersect1d(proteomes, phosphoproteomes)
 
 # Put them in a CSV file
-pd.concat([pd.DataFrame(proteomes_only), pd.DataFrame(phosphoproteomes_only), pd.DataFrame(intersection)], axis=1).to_csv('savefile.csv', index=False, header=['Proteomes', 'Phosphoroteomes', 'Both']) 
+pd.concat([pd.DataFrame(proteomes_only), pd.DataFrame(phosphoproteomes_only), pd.DataFrame(intersection)], axis=1).to_csv('task1.csv', index=False, header=['Proteomes', 'Phosphoroteomes', 'Both']) 
